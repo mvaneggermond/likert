@@ -310,7 +310,7 @@ likert.bar.plot <- function(l,
 			if(nrow(lpercentneutral) > 0 & !centered) {
 			  p <- p + geom_text(data=lpercentpos[lpercentpos$variable == center.label,], 
 			                     aes(x=Item, y=pos, 
-			                         label=paste0(prettyNum(value, digits=digits, drop0trailing=drop0trailing, zero.print=zero.print), '%')),
+			                         label=paste0(prettyNum(value, digits=digits, drop0trailing=drop0trailing, zero.print=zero.print), 'Test')),
 			                         size=text.size, color=text.color)
 			}
 		}
